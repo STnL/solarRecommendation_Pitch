@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Residential Solar Panels</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Residential Solar Panels">
+  <meta name="author" content="H.Thai">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Residential Solar Panels</h1>
+    <h2>Assessing the profitability of residential solar panels in Eastern Australia</h2>
+    <p>H.Thai<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Background</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The push for renewable energy has been an increasing issue in Australia. In particular, solar is considered one of the leading sources of renewable energy given Australia&#39;s level of solar intensity.</p>
+
+<p>With the increasingly exponential improvement of solar technology, solar is quickly becoming an opportunity for people to not only use cleaner energy but generate money from solar generation on their roofs. The way this works is that power companies pay people for their solar energy generation. </p>
+
+<p>However, to profit from this as a residential consumer depends on a number of factors. </p>
+
+<p>The aim of this data product is to provide a recommendation based on information entered by the user.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The Facts</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Some key facts about solar generation in Australia:</p>
+
+<pre><code class="r">average_usage_per_person &lt;- 5 
+average_person_per_household &lt;- 3.5
+average_usage_per_household &lt;- average_usage_per_person * average_person_per_household
+avg_solar_gen &lt;- 18
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>The Logic</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The logic for the current recommendation engine is rudimentary. It accounts for:</p>
+
+<ul>
+<li>the state in Eastern Australia that the user resides and automatically assumes that the sun-rich states of QLD and NSW have sufficient sunlight hours in the year to have constant solar generation.</li>
+<li>the average electricity usage per user as reported by Australia&#39;s Energy Regulator (AER) which is 5 KWh.</li>
+<li>the living space (in square meters) of the user.</li>
+<li>the average generation of the 90th percentile of solar panels in Australia which is 18 KWh.</li>
+<li>the average usage per household in Eastern Australia which is 18 KWh.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Next Steps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Enhance the intelligence of the recommendation engine by:</p>
+
+<ul>
+<li>Provide a chart of payback period for purchasing solar panels so user has an idea they&#39;ll first generate a profit</li>
+<li>Include a home insulation index to factor into the recommendation</li>
+<li>Provide the usage options to include household type which will enable more intelligent recommendation based on the type of household. (EG: parents + young child, parents + teenage child, working couple etc.)<br></li>
+<li>Take the geo-location of the user (provided user shares such information) to determine the solar intensity index of the user&#39;s location and feed this into the recommendation algorithm.</li>
+<li>Factor into the recommendation the amount of money the user is willing to spend on solar panels to ascertain the likely generation capacity of purchased panels</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Background'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Facts'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The Logic'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Next Steps'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
